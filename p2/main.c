@@ -9,17 +9,18 @@ int main()
     int maxNumCount = 0;
 
     scanf("%d", &length);
-    char str[1000000];
-    scanf("%s", &str);
+    char c;
+
 	for(int i = 0; i < length; i++){
-        if(str[i] <= 'z' && str[i] >= 'a') {
+        scanf("%c", &c);
+        if(c <= 'z' && c >= 'a') {
             alphaCount++;
             if(alphaCount > maxAlphaCount)
                 maxAlphaCount = alphaCount;
         }
         else 
             alphaCount = 0;
-        if(str[i] <= '9' && str[i] >= '0') {
+        if(c <= '9' && c >= '0') {
             numberCount++;
             if(numberCount > maxNumCount)
                 maxNumCount = numberCount;

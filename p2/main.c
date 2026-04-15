@@ -11,7 +11,7 @@ int main()
     scanf("%d", &length);
     char c;
 
-	for(int i = 0; i < length; i++){
+	for(int i = 0; i <= length; i++){
         scanf("%c", &c);
         if(c <= 'z' && c >= 'a') {
             alphaCount++;
